@@ -71,7 +71,7 @@ public class GenerationNumeroService {
         return resultat.toString();
     }
 
-    private String tronquer(String texte, int longueur) {
+    public String tronquer(String texte, int longueur) {
         if (longueur == 0 || texte.length() <= longueur) return texte;
         return texte.substring(0, longueur);
     }
